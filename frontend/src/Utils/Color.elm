@@ -1,0 +1,34 @@
+module Utils.Color exposing (..)
+
+import Element exposing (..)
+
+
+color =
+    { blackcurrant = rgb255 0x12 0x01 0x36
+    , cobalt = rgb255 0x03 0x5A 0xA6
+    , summerSky = rgb255 0x40 0xBA 0xD5
+    , moonYellow = rgb255 0xFC 0xBF 0x1E
+    , blue = rgb255 0x00 0x00 0xFF
+    , liteBlue = rgb255 0x7F 0xA5 0xFA
+    , white = rgb255 0xFF 0xFF 0xFF
+    , black = rgb255 0x00 0x00 0x00
+    , green = rgb255 0x14 0x6F 0x10
+    , indigo = rgb255 0x4B 0x00 0x82
+    , ash = rgb255 0xDF 0xDF 0xDF
+    }
+
+
+primaryColor =
+    color.blackcurrant
+
+
+secondaryColor =
+    color.cobalt
+
+
+tertiaryColor =
+    color.summerSky
+
+
+quarternaryColor =
+    color.moonYellow
