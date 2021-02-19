@@ -1,0 +1,31 @@
+* Model
+** voters
+*** id : id
+*** voter_no : Int
+*** election_id : references(elections)
+*** name : String
+*** pin : Int
+** symbols
+*** id : id
+*** election_id : references(elections)
+*** name : String
+*** image_src : String
+** positions
+*** id : id
+*** election_id : references(elections)
+*** name : String
+** candidates
+*** id : id
+*** election_id : references(elections)
+*** voter_id : references(voters)
+*** symbol_id : references(symbol)
+*** position_id : references(positions)
+** votes
+*** id : id
+*** election_id : references(elections)
+*** voter_id : references(voters)
+*** candidate_id : references(candidates)
+*** position_id : references(positions)
+** elections
+*** id : id
+*** name : String
